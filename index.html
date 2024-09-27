@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Typing Speed Test</h1>
+
+        <!-- Dark Mode Toggle -->
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+
+        <div class="test-container">
+            <!-- Sentence to type -->
+            <p id="sentence"></p>
+
+            <!-- Textarea for typing -->
+            <textarea id="input-area" placeholder="Start typing here..." rows="5"></textarea>
+
+            <!-- Progress bar -->
+            <div id="progress-bar">
+                <div id="progress-bar-fill"></div>
+            </div>
+
+            <!-- Timer, Speed, and Reset Button -->
+            <p id="timer">Time: 0s</p>
+            <p id="speed">Speed: 0 WPM</p>
+            <button id="reset-btn">Reset</button>
+
+            <!-- Leaderboard -->
+            <button id="leaderboard-btn">Show Leaderboard</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

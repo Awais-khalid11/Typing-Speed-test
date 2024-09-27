@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    transition: background-color 0.5s;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+}
+
+.test-container {
+    background-color: #4ee4ff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+#sentence {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#input-area {
+    width: 98%;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#timer, #speed {
+    margin: 10px 0;
+}
+
+#reset-btn, #leaderboard-btn {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+#reset-btn:hover, #leaderboard-btn:hover {
+    background-color: #0056b3;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+#progress-bar-fill {
+    height: 100%;
+    width: 0;
+    background-color: #28a745;
+    transition: width 0.3s;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+}
+
+textarea.dark-mode {
+    background-color: #444;
+    color: white;
+    border-color: #666;
+}
+
+#dark-mode-toggle {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+.correct-text {
+    color: green;
+}
+
+.incorrect-text {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    .test-container {
+        padding: 10px;
+    }
+
+    #sentence {
+        font-size: 1em;
+    }
+}
